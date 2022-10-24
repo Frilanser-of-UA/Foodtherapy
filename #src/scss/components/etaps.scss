@@ -138,6 +138,10 @@
 			display: block;
 			margin: 0px 0px 70px 0px;
 		}
+
+		@media (max-width:($md3+px)) {
+			margin: 0px 0px 40px 0px;
+		}
 	}
 
 	&__item {
@@ -224,6 +228,11 @@
 			margin: 0px 0px 68px 0px;
 		}
 
+		@media (max-width:($md2+px)) {
+			flex-direction: row-reverse;
+			justify-content: flex-end;
+		}
+
 		@media (max-width:($md3+px)) {
 			-webkit-box-orient: vertical;
 			-webkit-box-direction: reverse;
@@ -246,11 +255,25 @@
 			margin: 0px 17px 0px 0px;
 		}
 
+		@media (max-width:($md2+px)) {
+			margin: 0;
+		}
+
 		@media (max-width:($md3+px)) {
 			-webkit-box-flex: 0;
 			-ms-flex: 0 1 auto;
 			flex: 0 1 auto;
 			margin: 0px 0px 0px 0px;
+		}
+	}
+
+	&__summ {
+		@media (max-width:($md2+px)) {
+			margin: 0px 42px 0px 0px;
+		}
+
+		@media (max-width:($md3+px)) {
+			margin: 0px 0px 14px 0px;
 		}
 	}
 

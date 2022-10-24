@@ -3,16 +3,14 @@
 	position: relative;
 	z-index: 1;
 
+
 	@media (max-width:($md2+px)) {
-		z-index: 5;
+		z-index: 10;
 		position: fixed;
 		width: 100%;
 		left: 0;
 		top: 0;
-		-webkit-transition: background-color 0.4s ease 0s, -webkit-transform 0.25s linear 0s;
-		transition: background-color 0.4s ease 0s, -webkit-transform 0.25s linear 0s;
-		transition: transform 0.25s linear 0s, background-color 0.4s ease 0s;
-		transition: transform 0.25s linear 0s, background-color 0.4s ease 0s, -webkit-transform 0.25s linear 0s;
+		transition: transform 0.25s linear 0s, background-color 0.4s ease 0s, height 0.3s ease 0s;
 
 		&._fixed {
 			-webkit-transform: translateY(-130px);
@@ -21,6 +19,14 @@
 
 		&._bg {
 			background-color: #6AB2A8;
+
+			@media (max-width:($md2+px)) {
+				height: 110px;
+			}
+
+			@media (max-width:($md3+px)) {
+				height: 70px;
+			}
 
 			.header__img_visible {
 				display: none;
@@ -1026,6 +1032,10 @@
 	&__item {
 		&:not(:last-child) {
 			margin: 0px 20px 0px 0px;
+
+			@media (max-width:($md2+px)) {
+				margin: 0;
+			}
 		}
 
 		&.active {

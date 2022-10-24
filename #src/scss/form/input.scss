@@ -151,6 +151,10 @@ textarea {
 		letter-spacing: -0.02em;
 		color: $stroke;
 	}
+
+	@media (any-hover:hover) {
+		&:hover {}
+	}
 }
 
 textarea.input-2 {

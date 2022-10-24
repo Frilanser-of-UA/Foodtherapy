@@ -501,6 +501,11 @@
 
 	&__items {
 		border-bottom: 1px solid #DAE7E9;
+
+		&_min {
+			margin: 0 auto;
+			border: none;
+		}
 	}
 
 	&__item {
@@ -535,6 +540,7 @@
 			line-height: 100%;
 			text-decoration-line: line-through;
 			color: #9BA2AC;
+			justify-content: flex-start;
 		}
 
 		&_new {
@@ -558,13 +564,10 @@
 	}
 
 	&__btn {
+		width: 100%;
 
 		&:not(:last-child) {
 			margin: 0px 0px 15px 0px;
-		}
-
-		@media (max-width:($md2+px)) {
-			width: 100%;
 		}
 	}
 }

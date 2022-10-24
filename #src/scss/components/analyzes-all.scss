@@ -226,6 +226,7 @@
 
 		@media (max-width:($md3+px)) {
 			margin: 0px 0px 15px 0px;
+			font-size: 20px;
 		}
 	}
 
@@ -239,6 +240,7 @@
 
 		@media (max-width:($md3+px)) {
 			margin: 0px 0px 0px 0px;
+			font-size: 15px;
 		}
 	}
 
@@ -394,7 +396,7 @@
 
 	&__label {
 		flex: 0 1 330px;
-		font-weight: 500;
+		font-weight: 700;
 		font-size: 20px;
 		line-height: 174%;
 		transition: color 0.3s ease 0s;
@@ -407,7 +409,7 @@
 		}
 
 		@media (max-width:($md3+px)) {
-			font-weight: 700;
+			font-size: 15px;
 		}
 	}
 
@@ -424,12 +426,20 @@
 		font-size: 20px;
 		line-height: 130%;
 
+		@media (max-width:($md3+px)) {
+			font-size: 15px;
+		}
+
 		&_old {
 			font-weight: 400;
 			font-size: 15px;
 			line-height: 130%;
 			color: $gray;
 			text-decoration-line: line-through;
+
+			@media (max-width:($md3+px)) {
+				font-size: 13px;
+			}
 		}
 
 		&_new {
@@ -444,6 +454,10 @@
 		color: $green;
 		position: relative;
 		z-index: 1;
+
+		@media (max-width:($md3+px)) {
+			font-size: 16px;
+		}
 
 	}
 
