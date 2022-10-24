@@ -1,0 +1,26 @@
+.subscribe {
+	margin: 100px 0;
+
+	&__container {}
+
+	&__body {
+		background-color: $green;
+		padding: 50px;
+		border-radius: 20px;
+
+		@media (max-width:($md3+px)) {
+			padding: 25px 20px;
+		}
+	}
+
+	&__label {
+		margin: 0px 0px 5px 0px;
+	}
+
+	&__title {
+		max-width: 855px;
+		margin: 0px 0px 50px 0px;
+	}
+
+	&__form {}
+}

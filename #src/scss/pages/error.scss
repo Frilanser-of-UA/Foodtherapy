@@ -1,0 +1,40 @@
+.error {
+	padding: 120px 0px 0px 0px;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	flex: 1 1 auto;
+
+	&__container {
+		max-width: 325px;
+		padding: 15px 0;
+	}
+
+	&__label {
+		font-weight: 700;
+		font-size: 45px;
+		line-height: 124%;
+		color: $green;
+		margin: 0px 0px 5px 0px;
+
+		span {
+			font-size: 60px;
+			line-height: 114%;
+			margin: 0px 20px 0px 0px;
+		}
+	}
+
+	&__text {
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 130%;
+		margin: 0px 0px 45px 0px;
+	}
+
+	&__btn {
+		width: 100%;
+
+	}
+}

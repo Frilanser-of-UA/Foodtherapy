@@ -1,0 +1,162 @@
+//<INPUT (inp+tab)>====================================================================================================
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.input {
+	border-radius: 0 !important;
+	width: 100%;
+	display: block;
+	padding: 0 5px 8px 0px;
+	border-bottom: 1px solid $gray-non;
+	outline: none;
+	color: $black;
+	cursor: pointer;
+
+	&:focus {
+		border-color: $green;
+
+		&~.form__label {
+			display: block;
+		}
+
+		&~.form-popup__label {
+			display: block;
+		}
+	}
+
+	&::placeholder {
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 114%;
+		color: $gray;
+	}
+
+	&.error {
+		border-color: #FF2116;
+		color: #FF2116;
+
+		&:focus {
+			&~.form__label {
+				display: none;
+			}
+
+			&~.form-popup__label {
+				display: none;
+			}
+		}
+
+		&::placeholder {
+			color: #FF2116;
+		}
+	}
+}
+
+.input-2 {
+	outline: none;
+	background: #FFFFFF;
+	border: 1px solid #DAE7E9;
+	border-radius: 8px;
+	width: 100%;
+	padding: 0 15px;
+	font-size: 20px;
+	line-height: 130%;
+	color: $black;
+	height: 56px;
+	display: block;
+	cursor: pointer;
+
+	&::placeholder {
+		font-size: 18px;
+		line-height: 130%;
+		color: #CACACA;
+	}
+
+	&:focus {
+		border-color: $green;
+
+		&~.form-comment__label {
+			display: block;
+		}
+	}
+
+	&.error {
+		border-color: #FF2116;
+		color: #FF2116;
+
+		&:focus {
+			&~.form-comment__label {
+				display: none;
+			}
+		}
+
+
+		&::placeholder {
+			color: #FF2116;
+		}
+	}
+}
+
+.input-3 {
+	border-radius: 0 !important;
+	width: 100%;
+	display: block;
+	padding: 0 35px 8px 0px;
+	border-bottom: 1px solid $black;
+	outline: none;
+	color: $black;
+	cursor: pointer;
+	font-size: 25px;
+
+	&:focus {
+		border-color: $green;
+	}
+
+	&::placeholder {
+		font-weight: 500;
+		font-size: 25px;
+		line-height: 114%;
+		color: $gray;
+	}
+}
+
+.input-4 {
+	border-radius: 0 !important;
+	height: 62px;
+	display: block;
+	outline: none;
+	cursor: pointer;
+	background-color: $green;
+	padding: 5px 15px;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 145%;
+	letter-spacing: -0.02em;
+	color: $stroke;
+	border: 1px solid $stroke;
+
+	@media (max-width:($md3+px)) {
+		height: 54px;
+	}
+
+	&::placeholder {
+		font-weight: 300;
+		font-size: 18px;
+		line-height: 145%;
+		letter-spacing: -0.02em;
+		color: $stroke;
+	}
+}
+
+textarea.input-2 {
+	resize: none;
+	padding: 15px;
+	height: 145px;
+}
+
+//</INPUT>====================================================================================================

@@ -1,0 +1,53 @@
+.consultation {
+	background-color: $green-soft;
+	padding: 100px 0px;
+
+	@media (max-width:($md3+px)) {
+		padding: 80px 0px;
+	}
+
+	&_margin {
+		margin: 150px 0;
+
+		@media (max-width:($md3+px)) {
+			margin: 80px 0px;
+		}
+
+	}
+
+	&__body {
+		text-align: center;
+	}
+
+	&__title {
+		font-weight: 700;
+		font-size: 60px;
+		line-height: 114%;
+		text-align: center;
+		margin: 0px auto 77px auto;
+		max-width: 1060px;
+
+		@media (max-width:($md2+px)) {
+			font-size: 50px;
+		}
+
+		@media (max-width:($md3+px)) {
+			font-size: 35px;
+			margin: 0px 0px 35px 0px;
+		}
+
+		@media (max-width: 374px) {
+			font-size: 30px;
+		}
+	}
+
+	&__btn {
+		width: 350px;
+
+		@media (max-width:($md3+px)) {
+			width: 290px;
+		}
+	}
+
+
+}

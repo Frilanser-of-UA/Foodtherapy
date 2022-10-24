@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+	<title>Сторінка товару min</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/vendors.min.css">
+	<link rel="stylesheet" href="css/style.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+	<div class="header__container container">
+		<div class="header__body">
+			<a href="#" class="header__logo">
+				<div class="header__img header__img_visible">
+					<img src="img/header/logo-drop-down-darck.svg" alt="логотип">
+				</div>
+				<div class="header__img header__img_not-visible">
+					<img src="img/header/logo.svg" alt="логотип">
+				</div>
+			</a>
+			<div class="header__menu menu">
+				<div class="menu__body">
+					<ul class="menu__list menu__list_black">
+						<li class="menu__item">
+							<span class="menu__link _icon-arrow-down">Послуги</span>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__link">Меданалізи</a>
+						</li>
+						<li class="menu__item">
+							<span class="menu__link _icon-arrow-down">Діагностика</span>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__link">Магазин</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__link">Про компанію</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__link">Блог</a>
+						</li>
+					</ul>
+				</div>
+				<!-- nav active Откроет выпадающее меню-->
+				<nav class="menu__drop-down drop-down ">
+					<div class="drop-down__container container">
+						<div class="drop-down__header">
+							<a href="#" class="drop-down__logo">
+								<picture>
+									<source srcset="img/header/logo-drop-down.svg" type="image/svg+xml" media="(min-width:1024px)">
+									<source srcset="img/header/logo-drop-down-darck.svg" type="image/svg+xml" media="(max-width:1024px)">
+									<img src="img/header/logo-drop-down.svg" alt="Логотип">
+								</picture>
+							</a>
+							<div class="drop-down__menu">
+								<ul class="drop-down__list">
+									<!-- drop-down__item active виделит активный пункт меню + переворот галочки-->
+									<li class="drop-down__item active">
+										<span class="drop-down__link _icon-arrow-down">Послуги</span>
+										<!-- drop-down__submenu active Откроет 2 уровень випадающего меню-->
+										<div class="drop-down__submenu active">
+											<ul class="drop-down__sublist">
+												<!-- drop-down__subitem active виделит активный пункт меню + переворот галочки-->
+												<li class="drop-down__subitem active">
+													<span class="drop-down__sublink _icon-arrow-down">Foodtherapy Сheck-up</span>
+													<!-- drop-down__subsublist active виделит активный пункт меню + переворот галочки-->
+													<ul class="drop-down__subsublist active">
+														<li class="drop-down__subsubitem"><a href="#" class="drop-down__subsublink">Мужской</a></li>
+														<li class="drop-down__subsubitem"><a href="#" class="drop-down__subsublink">Женский</a></li>
+														<li class="drop-down__subsubitem"><a href="#" class="drop-down__subsublink">Детский</a></li>
+														<li class="drop-down__subsubitem"><a href="#" class="drop-down__subsublink">Возраст+</a></li>
+													</ul>
+												</li>
+												<!--  -->
+												<li class="drop-down__subitem">
+													<span class="drop-down__sublink _icon-arrow-down">Меданализы</span>
+													<ul class="drop-down__subsublist">
+														<li class="drop-down__subsubitem"><a href="#" class="drop-down__subsublink">Медицинские анализы общие</a></li>
+														<li class="drop-down__subsubitem"><a href="#" class="drop-down__subsublink">Эксклюзивные анализы Foodtherapy США</a></li>
+														<li class="drop-down__subsubitem"><a href="#" class="drop-down__subsublink">Эксклюзивные анализы Foodtherapy Германия</a></li>
+														<li class="drop-down__subsubitem"><a href="#" class="drop-down__subsublink">Foodtherapy Сheck-up</a></li>
+														<li class="drop-down__subsubitem"><a href="#" class="drop-down__subsublink">Еще...</a></li>
+													</ul>
+												</li>
+												<li class="drop-down__subitem">
+													<span class="drop-down__sublink _icon-arrow-down">Терапия</span>
+													<ul class="drop-down__subsublist">
+														<li class="drop-down__subsubitem"><a href="#" class="drop-down__subsublink">Висцер. массаж</a></li>
+														<li class="drop-down__subsubitem"><a href="#" class="drop-down__subsublink">Массаж лица</a></li>
+														<li class="drop-down__subsubitem"><a href="#" class="drop-down__subsublink">Общий массаж</a></li>
+														<li class="drop-down__subsubitem"><a href="#" class="drop-down__subsublink">Гирудотерапия</a></li>
+													</ul>
+												</li>
+												<li class="drop-down__subitem">
+													<span class="drop-down__sublink _icon-arrow-down">Диетология</span>
+													<ul class="drop-down__subsublist">
+														<li class="drop-down__subsubitem"><a href="#" class="drop-down__subsublink">Общая консульт</a></li>
+														<li class="drop-down__subsubitem"><a href="#" class="drop-down__subsublink">Онлайн консульт</a></li>
+													</ul>
+												</li>
+												<li class="drop-down__subitem">
+													<span class="drop-down__sublink _icon-arrow-down">Диагностика</span>
+													<ul class="drop-down__subsublist">
+														<li class="drop-down__subsubitem"><a href="#" class="drop-down__subsublink">Биомпедансометрия</a></li>
+													</ul>
+												</li>
+												<li class="drop-down__subitem">
+													<span class="drop-down__sublink _icon-arrow-down">Пакетные обследования</span>
+													<ul class="drop-down__subsublist">
+														<li class="drop-down__subsubitem"><a href="#" class="drop-down__subsublink">Спорт</a></li>
+														<li class="drop-down__subsubitem"><a href="#" class="drop-down__subsublink">Бьюти кожа</a></li>
+														<li class="drop-down__subsubitem"><a href="#" class="drop-down__subsublink">Бьюти вес</a></li>
+														<li class="drop-down__subsubitem"><a href="#" class="drop-down__subsublink">Смарт мозг + энергия</a></li>
+														<li class="drop-down__subsubitem"><a href="#" class="drop-down__subsublink">Еще...</a></li>
+													</ul>
+												</li>
+												<li class="drop-down__subitem">
+													<span class="drop-down__sublink _icon-arrow-down">Детский раздел</span>
+													<ul class="drop-down__subsublist">
+														<li class="drop-down__subsubitem"><a href="#" class="drop-down__subsublink">Общая консульт</a></li>
+														<li class="drop-down__subsubitem"><a href="#" class="drop-down__subsublink">Онлайн консульт</a></li>
+													</ul>
+												</li>
+											</ul>
+											<a href="#" class="drop-down__link-label">Всі доступні послуги від FoodTherapy</a>
+										</div>
+									</li>
+									<li class="drop-down__item">
+										<a href="#" class="drop-down__link ">Меданалізи</a>
+									</li>
+									<li class="drop-down__item">
+										<a href="#" class="drop-down__link _icon-arrow-down">Діагностика</a>
+										<div class="drop-down__submenu">
+											<ul class="drop-down__sublist ">
+												<li class="drop-down__subitem"><a href="#" class="drop-down__sublink">Магазин (2 рівень)</a></li>
+												<li class="drop-down__subitem"><a href="#" class="drop-down__sublink">Магазин (2 рівень)</a></li>
+												<li class="drop-down__subitem"><a href="#" class="drop-down__sublink">Магазин (2 рівень)</a></li>
+												<li class="drop-down__subitem"><a href="#" class="drop-down__sublink">Магазин (2 рівень)</a></li>
+												<li class="drop-down__subitem"><a href="#" class="drop-down__sublink">Діагностика (2 рівень)</a>
+													<ul class="drop-down__sublist">
+														<li class="drop-down__subsubitem"><a href="#" class="drop-down__subsublink">Магазин (3 рівень)</a></li>
+														<li class="drop-down__subsubitem"><a href="#" class="drop-down__subsublink">Магазин (3 рівень)</a></li>
+														<li class="drop-down__subsubitem"><a href="#" class="drop-down__subsublink">Магазин (3 рівень)</a></li>
+														<li class="drop-down__subsubitem"><a href="#" class="drop-down__subsublink">Магазин (3 рівень)</a></li>
+													</ul>
+												</li>
+												<li class="drop-down__subitem"><a href="#" class="drop-down__sublink">Магазин (2 рівень)</a></li>
+												<li class="drop-down__subitem"><a href="#" class="drop-down__sublink">Діагностика (2 рівень)</a>
+													<ul class="drop-down__sublist">
+														<li class="drop-down__subsubitem"><a href="#" class="drop-down__subsublink">Магазин (3 рівень)</a></li>
+														<li class="drop-down__subsubitem"><a href="#" class="drop-down__subsublink">Магазин (3 рівень)</a></li>
+														<li class="drop-down__subsubitem"><a href="#" class="drop-down__subsublink">Магазин (3 рівень)</a></li>
+														<li class="drop-down__subsubitem"><a href="#" class="drop-down__subsublink">Магазин (3 рівень)</a></li>
+													</ul>
+												</li>
+											</ul>
+											<a href="#" class="drop-down__link-label">Всі доступні послуги від FoodTherapy</a>
+										</div>
+									</li>
+									<li class="drop-down__item">
+										<a href="#" class="drop-down__link">Магазин</a>
+									</li>
+									<li class="drop-down__item">
+										<a href="#" class="drop-down__link">Про компанію</a>
+									</li>
+									<li class="drop-down__item">
+										<a href="#" class="drop-down__link">Блог</a>
+									</li>
+								</ul>
+							</div>
+							<button class="drop-down__close"></button>
+						</div>
+					</div>
+				</nav>
+			</div>
+			<div class="header__items header__items_black" data-da=".drop-down__header,1023,2">
+				<!-- lang active раскривает язики-->
+				<div class="header__lang lang">
+					<div class="lang__header">
+						<button type="button" class="lang__button _icon-arrow-down">Укр</button>
+					</div>
+					<div class="lang__body">
+						<span class="lang__item not-visible">Укр</span>
+						<span class="lang__item">Рус</span>
+						<span class="lang__item">Eng</span>
+					</div>
+				</div>
+				<div class="header__search-form search-form">
+					<button type="submit" class="search-form__icon _icon-search"></button>
+					<form class="search-form__item" action="#">
+						<input class="search-form__input search-form__input_color" placeholder="Введіть ваш запит">
+						<button type="submit" class="search-form__button search-form__button_color _icon-search"></button>
+						<span type="submit" class="search-form__close search-form__close_color"></span>
+					</form>
+				</div>
+				<div class="header__phone phone">
+					<button type="submit" class="phone__button _icon-phone"></button>
+					<div class="phone__body">
+						<div class="phone__triangle">
+							<img src="img/header/triangle.svg" alt="">
+						</div>
+						<div class="phone__content">
+							<a href="tel:380685900941" class="phone__link">+380 68 590 0941</a>
+							<a href="tel:380685900941" class="phone__link">+380 68 590 0941</a>
+						</div>
+					</div>
+				</div>
+				<a href="#" class="header__user _icon-user"></a>
+				<a href="#" class="header__cart _icon-cart"></a>
+			</div>
+			<button class="menu__icon icon-menu">
+				<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<g clip-path="url(#clip0_656_5707)">
+						<path d="M10.6667 16H53.3334" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+						<path d="M10.6667 32H53.3334" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+						<path d="M10.6667 48H53.3334" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+					</g>
+					<defs>
+						<clipPath id="clip0_656_5707">
+							<rect width="64" height="64" fill="white" />
+						</clipPath>
+					</defs>
+				</svg>
+			</button>
+		</div>
+	</div>
+</header>
+		<main class="page">
+			<!-- ================================= -->
+			<section class="product">
+				<div class="product__container container">
+					<div class="product__body product__body_min">
+						<div class="product__left">
+							<div class="product__preview slider-preview">
+								<div class="slider-preview__wrapper">
+									<div class="slider-preview__slide">
+										<div class="slider-preview__body">
+											<div class="slider-preview__img _ibg">
+												<img src="img/product/product-1.jpg" alt="Товар">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="product__right">
+							<div class="product__content content-product">
+								<div class="content-product__body">
+									<div class="content-product__line-title">
+										<h2 class="content-product__title">Олія із зародків пшениці Extra Virgin</h2>
+										<span class="content-product__cod">Код товару 566352</span>
+									</div>
+									<div class="content-product__row">
+										<div class="content-product__text">
+										</div>
+										<div class="content-product__prices">
+											<div class="content-product__price price">
+												<div class="price__item">7500грн</div>
+												<div class="price__buttons">
+													<a href="#" target="_blank" class="price__btn btn btn_height">Додати до кошика</a>
+													<a href="#order" class="price__btn btn btn_white _popup-link">Швидке замовлення</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="product__botom">
+								<h2 class="product__title">Відгуки про товар</h2>
+								<div class="product__labels-rat">
+									<div class="product__span">На цей товар ще немає відгуків</div>
+								</div>
+								<div class="product__line product__line_left">
+									<button class="product__button">Залишити свій відгук</button>
+								</div>
+							</div>
+							<div class="product__comment comment">
+								<div class="comment__label">Залиште свій власний відгук про товар “Рослинне масло Virgin Extract”</div>
+								<form action="#" id="form-comment" class="comment__form form-comment" method="get" enctype="multipart/form-data" novalidate="novalidate">
+									<div class="form-comment__rating rating">
+										<div class="rating" data-total-value="0">
+											<div class="rating__item-form _icon-star" data-item-value="5"></div>
+											<div class="rating__item-form _icon-star" data-item-value="4"></div>
+											<div class="rating__item-form _icon-star" data-item-value="3"></div>
+											<div class="rating__item-form _icon-star" data-item-value="2"></div>
+											<div class="rating__item-form _icon-star" data-item-value="1"></div>
+										</div>
+									</div>
+									<div class="form-comment__item">
+										<div class="form-comment__name">
+											<input id="text" class="form-comment__input input-2" type="text" name="Ім’я" placeholder="Ім’я">
+											<label class="form-comment__label" for="text">Заповніть поле Ім’я</label>
+										</div>
+										<div class="form-comment__email">
+											<input id="imail" class="form-comment__input input-2" type="email" name="Електронна пошта" placeholder="Електронна пошта">
+											<label class="form-comment__label" for="imail">Заповніть поле email</label>
+										</div>
+									</div>
+									<div class="form-comment__line">
+										<textarea id="comment" class="form-comment__input input-2" name="Коментар" placeholder="Коментар"></textarea>
+										<label class="form-comment__label" for="comment">Заповніть поле коментар</label>
+									</div>
+									<div class="form-comment__row">
+										<button type="submit" form="form-comment" class="form-comment__button btn btn_height">Додати відгук</button>
+									</div>
+								</form>
+							</div>
+							<div class="product__successfull successfull successfull_comment">
+								<div class="successfull__img">
+									<img src="img/categori/succesfull.svg" alt="Забраження успішного відправлення">
+								</div>
+								<div class="successfull__text">Дякуємо за ваш відгук. Після модерації ми опублікуємо ваш відгук, щоб його бачили інші
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- ================================ -->
+			<section class="cards">
+				<div class="cards__container container">
+					<h2 class="cards__title">Схожі товари</h2>
+					<div class="cards__body">
+						<div class="cards__preview slider-cards">
+							<div class="slider-cards__wrapper">
+								<div class="slider-cards__slide">
+									<div class="oils__card-oil card-oil">
+										<div class="card-oil__body">
+											<div class="card-oil__content">
+												<div class="card-oil__left">
+													<img src="img/categori/oil-1.png" alt="Зображення пляшки з олією">
+												</div>
+												<div class="card-oil__right">
+													<h3 class="card-oil__title">Олія із зародків пшениці Extra Virgin</h3>
+													<p class="card-oil__text">Допис про масло в декілька строк, про його користь та зручність в використанні, чим воно допомагає організму</p>
+													<div class="card-oil__row">
+														<div class="card-oil__volumes">
+															<a href="#" target="_blank" class="card-oil__link">0.5 л</a>
+															<a href="#" target="_blank" class="card-oil__link">1.5 л</a>
+															<a href="#" target="_blank" class="card-oil__link">2.5 л</a>
+															<a href="#" target="_blank" class="card-oil__link card-oil__link_non">3.5 л</a>
+															<a href="#" target="_blank" class="card-oil__link">10 л</a>
+														</div>
+														<div class="card-oil__prices">
+															<div class="card-oil__price">від 732 грн</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="card-oil__hover">
+												<a href="#" target="_blank" class="card-oil__link-content">
+													<div class="card-oil__left">
+														<img src="img/categori/oil-1.png" alt="Зображення пляшки з олією">
+													</div>
+													<div class="card-oil__right">
+														<h3 class="card-oil__title">Олія із зародків пшениці Extra Virgin</h3>
+														<p class="card-oil__text">Допис про масло в декілька строк, про його користь та зручність в використанні, чим воно допомагає організму</p>
+														<ul class="card-oil__list">
+															<li class="card-oil__item"><span>Група:</span>Значення</li>
+															<li class="card-oil__item"><span>Група:</span>Значення</li>
+															<li class="card-oil__item"><span>Група:</span>Значення</li>
+														</ul>
+														<div class="card-oil__row">
+															<div class="card-oil__volumes">
+																<span class="card-oil__link">0.5 л</span>
+																<span class="card-oil__link">1.5 л</span>
+																<span class="card-oil__link">2.5 л</span>
+																<span class="card-oil__link card-oil__link_non">3.5 л</span>
+																<span class="card-oil__link">10 л</span>
+															</div>
+															<div class="card-oil__prices">
+																<div class="card-oil__price">від 732 грн</div>
+															</div>
+														</div>
+													</div>
+												</a>
+												<div class="card-oil__line">
+													<a href="#" target="_blank" class="card-oil__btn btn-shop">Купити <span class="_icon-cart"></span></a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="slider-cards__slide">
+									<div class="oils__card-oil card-oil">
+										<div class="card-oil__body">
+											<div class="card-oil__content">
+												<div class="card-oil__left">
+													<img src="img/categori/oil-1.png" alt="Зображення пляшки з олією">
+												</div>
+												<div class="card-oil__right">
+													<h3 class="card-oil__title">Олія із зародків пшениці Extra Virgin</h3>
+													<p class="card-oil__text">Допис про масло в декілька строк, про його користь та зручність в використанні, чим воно допомагає організму</p>
+													<div class="card-oil__row">
+														<div class="card-oil__volumes">
+															<a href="#" target="_blank" class="card-oil__link">0.5 л</a>
+															<a href="#" target="_blank" class="card-oil__link">1.5 л</a>
+															<a href="#" target="_blank" class="card-oil__link">2.5 л</a>
+															<a href="#" target="_blank" class="card-oil__link card-oil__link_non">3.5 л</a>
+															<a href="#" target="_blank" class="card-oil__link">10 л</a>
+														</div>
+														<div class="card-oil__prices">
+															<div class="card-oil__price">від 732 грн</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="card-oil__hover">
+												<a href="#" target="_blank" class="card-oil__link-content">
+													<div class="card-oil__left">
+														<img src="img/categori/oil-1.png" alt="Зображення пляшки з олією">
+													</div>
+													<div class="card-oil__right">
+														<h3 class="card-oil__title">Олія із зародків пшениці Extra Virgin</h3>
+														<p class="card-oil__text">Допис про масло в декілька строк, про його користь та зручність в використанні, чим воно допомагає організму</p>
+														<ul class="card-oil__list">
+															<li class="card-oil__item"><span>Група:</span>Значення</li>
+															<li class="card-oil__item"><span>Група:</span>Значення</li>
+															<li class="card-oil__item"><span>Група:</span>Значення</li>
+														</ul>
+														<div class="card-oil__row">
+															<div class="card-oil__volumes">
+																<span class="card-oil__link">0.5 л</span>
+																<span class="card-oil__link">1.5 л</span>
+																<span class="card-oil__link">2.5 л</span>
+																<span class="card-oil__link card-oil__link_non">3.5 л</span>
+																<span class="card-oil__link">10 л</span>
+															</div>
+															<div class="card-oil__prices">
+																<div class="card-oil__price">від 732 грн</div>
+															</div>
+														</div>
+													</div>
+												</a>
+												<div class="card-oil__line">
+													<a href="#" target="_blank" class="card-oil__btn btn-shop">Купити <span class="_icon-cart"></span></a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="slider-cards__controls">
+								<button class="slider-cards__btn slider-cards__btn_prev _icon-arrow"></button>
+								<div class="slider-cards__pagination-dots pagination-dots">
+									<div class="pagination-dots__item"></div>
+									<div class="pagination-dots__item"></div>
+									<div class="pagination-dots__item active"></div>
+									<div class="pagination-dots__item"></div>
+									<div class="pagination-dots__item"></div>
+								</div>
+								<button class="slider-cards__btn slider-cards__btn_next _icon-arrow"></button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- ================================ -->
+			<section class="cards">
+				<div class="cards__container container">
+					<h2 class="cards__title">Вас також зацікавить</h2>
+					<div class="cards__body">
+						<div class="cards__preview slider-cards">
+							<div class="slider-cards__wrapper">
+								<div class="slider-cards__slide">
+									<div class="oils__card-oil card-oil">
+										<div class="card-oil__body">
+											<div class="card-oil__content">
+												<div class="card-oil__left">
+													<img src="img/categori/oil-2.png" alt="Зображення пляшки з олією">
+												</div>
+												<div class="card-oil__right">
+													<h3 class="card-oil__title">Олія із зародків пшениці Extra Virgin</h3>
+													<p class="card-oil__text">Допис про масло в декілька строк, про його користь та зручність в використанні, чим воно допомагає організму</p>
+													<div class="card-oil__row">
+														<div class="card-oil__volumes">
+															<a href="#" target="_blank" class="card-oil__link">0.5 л</a>
+															<a href="#" target="_blank" class="card-oil__link">1.5 л</a>
+															<a href="#" target="_blank" class="card-oil__link">2.5 л</a>
+															<a href="#" target="_blank" class="card-oil__link card-oil__link_non">3.5 л</a>
+															<a href="#" target="_blank" class="card-oil__link">10 л</a>
+														</div>
+														<div class="card-oil__prices">
+															<div class="card-oil__price">від 732 грн</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="card-oil__hover">
+												<a href="#" target="_blank" class="card-oil__link-content">
+													<div class="card-oil__left">
+														<img src="img/categori/oil-2.png" alt="Зображення пляшки з олією">
+													</div>
+													<div class="card-oil__right">
+														<h3 class="card-oil__title">Олія із зародків пшениці Extra Virgin</h3>
+														<p class="card-oil__text">Допис про масло в декілька строк, про його користь та зручність в використанні, чим воно допомагає організму</p>
+														<ul class="card-oil__list">
+															<li class="card-oil__item"><span>Група:</span>Значення</li>
+															<li class="card-oil__item"><span>Група:</span>Значення</li>
+															<li class="card-oil__item"><span>Група:</span>Значення</li>
+														</ul>
+														<div class="card-oil__row">
+															<div class="card-oil__volumes">
+																<span class="card-oil__link">0.5 л</span>
+																<span class="card-oil__link">1.5 л</span>
+																<span class="card-oil__link">2.5 л</span>
+																<span class="card-oil__link card-oil__link_non">3.5 л</span>
+																<span class="card-oil__link">10 л</span>
+															</div>
+															<div class="card-oil__prices">
+																<div class="card-oil__price">від 732 грн</div>
+															</div>
+														</div>
+													</div>
+												</a>
+												<div class="card-oil__line">
+													<a href="#" target="_blank" class="card-oil__btn btn-shop">Купити <span class="_icon-cart"></span></a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="slider-cards__slide">
+									<div class="oils__card-oil card-oil">
+										<div class="card-oil__body">
+											<div class="card-oil__content">
+												<div class="card-oil__left">
+													<img src="img/categori/oil-3.png" alt="Зображення пляшки з олією">
+												</div>
+												<div class="card-oil__right">
+													<h3 class="card-oil__title">Олія із зародків пшениці Extra Virgin</h3>
+													<p class="card-oil__text">Допис про масло в декілька строк, про його користь та зручність в використанні, чим воно допомагає організму</p>
+													<div class="card-oil__row">
+														<div class="card-oil__volumes">
+															<a href="#" target="_blank" class="card-oil__link">0.5 л</a>
+															<a href="#" target="_blank" class="card-oil__link">1.5 л</a>
+															<a href="#" target="_blank" class="card-oil__link">2.5 л</a>
+															<a href="#" target="_blank" class="card-oil__link card-oil__link_non">3.5 л</a>
+															<a href="#" target="_blank" class="card-oil__link">10 л</a>
+														</div>
+														<div class="card-oil__prices">
+															<div class="card-oil__price">від 732 грн</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="card-oil__hover">
+												<a href="#" target="_blank" class="card-oil__link-content">
+													<div class="card-oil__left">
+														<img src="img/categori/oil-3.png" alt="Зображення пляшки з олією">
+													</div>
+													<div class="card-oil__right">
+														<h3 class="card-oil__title">Олія із зародків пшениці Extra Virgin</h3>
+														<p class="card-oil__text">Допис про масло в декілька строк, про його користь та зручність в використанні, чим воно допомагає організму</p>
+														<ul class="card-oil__list">
+															<li class="card-oil__item"><span>Група:</span>Значення</li>
+															<li class="card-oil__item"><span>Група:</span>Значення</li>
+															<li class="card-oil__item"><span>Група:</span>Значення</li>
+														</ul>
+														<div class="card-oil__row">
+															<div class="card-oil__volumes">
+																<span class="card-oil__link">0.5 л</span>
+																<span class="card-oil__link">1.5 л</span>
+																<span class="card-oil__link">2.5 л</span>
+																<span class="card-oil__link card-oil__link_non">3.5 л</span>
+																<span class="card-oil__link">10 л</span>
+															</div>
+															<div class="card-oil__prices">
+																<div class="card-oil__price">від 732 грн</div>
+															</div>
+														</div>
+													</div>
+												</a>
+												<div class="card-oil__line">
+													<a href="#" target="_blank" class="card-oil__btn btn-shop">Купити <span class="_icon-cart"></span></a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="slider-cards__controls">
+								<button class="slider-cards__btn slider-cards__btn_prev _icon-arrow"></button>
+								<div class="slider-cards__pagination-dots pagination-dots">
+									<div class="pagination-dots__item"></div>
+									<div class="pagination-dots__item"></div>
+									<div class="pagination-dots__item active"></div>
+									<div class="pagination-dots__item"></div>
+									<div class="pagination-dots__item"></div>
+								</div>
+								<button class="slider-cards__btn slider-cards__btn_next _icon-arrow"></button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</section>
+			<!-- ================================ -->
+			<section class="callback callback_cat">
+				<div class="callback__container container">
+					<div class="callback__body">
+						<div class="callback__left">
+							<div class="callback__label label">Приписка</div>
+							<h2 class="callback__title title">Виникли запитання?</h2>
+							<p class="callback__text">Замовте безкоштовну онлайн консультацію і ми підскажемо що потрібно саме для вас і саме в вашому випадку</p>
+							<form action="#" id="form-question" class="callback__form form" method="get" enctype="multipart/form-data" novalidate="novalidate">
+								<div class="form__line">
+									<input id="text" class="form__input input" type="text" name="Ім’я" placeholder="Ім’я">
+									<label class="form__label" for="text">Це поле обов’язкове до заповнення</label>
+								</div>
+								<div class="form__line">
+									<input id="tel" class="form__input input" type="tel" name="Номер телефону" placeholder="Номер телефону">
+									<label for="tel" class="form__label" for="text">Це поле обов’язкове до заповнення</label>
+								</div>
+								<div class="form__line">
+									<input id="email" class="form__input input" type="email" name="Електронна пошта" placeholder="Електронна пошта">
+									<label for="email" class="form__label" for="text">Це поле обов’язкове до заповнення</label>
+								</div>
+								<div class="form__line">
+									<input id="text-2" class="form__input input" type="text" name="Питання" placeholder="Ваше питання*">
+									<label for="text-2" class="form__label" for="text">Це поле обов’язкове до заповнення</label>
+								</div>
+								<div class="form__row">
+									<button type="submit" form="form-question" class="form__button btn">Замовити консультацію</span></button>
+								</div>
+							</form>
+							<div class="callback__successfull successfull">
+								<div class="successfull__img">
+									<img src="img/categori/succesfull.svg" alt="Забраження успішного відправлення">
+								</div>
+								<div class="successfull__text">Ви успішно заповнили форму! Ми зв’яжемося з вами найближчим часом</div>
+							</div>
+						</div>
+						<div class="callback__right">
+							<div class="callback__img callback__img_cat _ibg">
+								<img src="img/constructor/img-2.jpg" alt="Зображення лікаря">
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</section>
+			<button class="button-up _icon-arrow"></button>
+		</main>
+		<footer class="footer">
+	<div class="footer__container container">
+		<div class="footer__body">
+			<div class="footer__left">
+				<ul class="footer__list">
+					<li class="footer__item"><span>Контакти</span>
+						<ul class="footer__sublist">
+							<li class="footer__subitem"><a href="#" class="footer__sublink">Контакти</a></li>
+							<li class="footer__subitem"><a href="#" class="footer__sublink">Послуги</a></li>
+							<li class="footer__subitem"><a href="#" class="footer__sublink">Аналізи</a></li>
+							<li class="footer__subitem"><a href="#" class="footer__sublink">Конфіденційність</a></li>
+						</ul>
+					</li>
+					<li class="footer__item"><span>Контакти</span>
+						<ul class="footer__sublist">
+							<li class="footer__subitem"><a href="#" class="footer__sublink">Контакти</a></li>
+							<li class="footer__subitem"><a href="#" class="footer__sublink">Послуги</a></li>
+							<li class="footer__subitem"><a href="#" class="footer__sublink">Аналізи</a></li>
+							<li class="footer__subitem"><a href="#" class="footer__sublink">Конфіденційність</a></li>
+						</ul>
+					</li>
+					<li class="footer__item"><span>Контакти</span>
+						<ul class="footer__sublist">
+							<li class="footer__subitem"><a href="#" class="footer__sublink">Контакти</a></li>
+							<li class="footer__subitem"><a href="#" class="footer__sublink">Послуги</a></li>
+							<li class="footer__subitem"><a href="#" class="footer__sublink">Аналізи</a></li>
+							<li class="footer__subitem"><a href="#" class="footer__sublink">Конфіденційність</a></li>
+						</ul>
+					</li>
+					<li class="footer__item"><span>Контакти</span>
+						<ul class="footer__sublist">
+							<li class="footer__subitem"><a href="#" class="footer__sublink">Контакти</a></li>
+							<li class="footer__subitem"><a href="#" class="footer__sublink">Послуги</a></li>
+							<li class="footer__subitem"><a href="#" class="footer__sublink">Аналізи</a></li>
+							<li class="footer__subitem"><a href="#" class="footer__sublink">Конфіденційність</a></li>
+						</ul>
+					</li>
+				</ul>
+				<div class="footer__bottom">
+					<a href="#" class="footer__link-copiring">Copyright 2022</a>
+					<a href="#" class="footer__link-copiring">Created by <span class="_icon-owl"></span></a>
+				</div>
+			</div>
+			<div class="footer__right">
+				<a href="#" class="footer__logo"><img src="img/footer/logo-footer.svg" alt="Логотип"></a>
+				<div class="footer__social social">
+					<a href="#" class="social__link _icon-facebook"></a>
+					<a href="#" class="social__link _icon-youtube"></a>
+					<a href="#" class="social__link _icon-telegram"></a>
+					<a href="#" class="social__link _icon-instagram"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+	</div>
+	<div class="popup popup_order">
+	<div class="popup__content">
+		<div class="popup__body">
+			<div class="popup__wrapper">
+				<h3 class="popup__title">Швидке замволення “Назва товару”</h3>
+				<div class="popup__text">Залиште ваші контактні данні, після цього ми вам зателефонуємо і підтвердимо ваше замовлення”</div>
+				<form id="form-popup" class="popup__form form-popup">
+					<div class="form-popup__row">
+						<div class="form-popup__img">
+							<img src="img/product/product-1.jpg" alt="Товар">
+						</div>
+						<div class="form-popup__item">
+							<div class="form-popup__label-text">Назва товару</div>
+							<div class="form-popup__value">Фасовка:<span>0.5л</span></div>
+						</div>
+						<div class="form-popup__price">1354 грн</div>
+					</div>
+					<div class="form-popup__line">
+						<input id="popup-text" class="form-popup__input input" type="text" name="Ім’я" placeholder="Ім’я">
+						<label for="popup-text" class="form-popup__label" for="text">Це поле обов’язкове до заповнення</label>
+					</div>
+					<div class="form-popup__line">
+						<input id="popup-tel" class="form-popup__input input" type="tel" name="Номер телефону" placeholder="Номер телефону">
+						<label for="popup-tel" class="form-popup__label" for="text">Це поле обов’язкове до заповнення</label>
+					</div>
+					<button form="form-popup" type="submit" class="form-popup__btn btn">Оформити замовлення</button>
+				</form>
+			</div>
+			<div class="popup__successfull successfull-popup">
+				<div class="successfull-popup__img">
+					<img src="img/categori/succesfull.svg" alt="Забраження успішного відправлення">
+				</div>
+				<div class="successfull-popup__text">Ви успішно заповнили форму! Ми зв’яжемося з вами найближчим часом</div>
+				<a href="#" class="successfull-popup__btn btn">Переглянути інші товари</a>
+			</div>
+			<div class="popup__close">
+				<img src="img/icons/close.svg" alt="Закрити">
+			</div>
+		</div>
+	</div>
+</div>
+	<!-- Swiper -->
+<!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+<script src="js/vendors.min.js"></script>
+<script src="js/app.min.js"></script>
+</body>
+
+</html>

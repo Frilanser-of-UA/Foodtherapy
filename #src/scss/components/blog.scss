@@ -1,0 +1,104 @@
+.blog {
+	margin: 50px 0px 100px 0px;
+
+	&__container {}
+
+	&__top {}
+
+	&__filter {}
+
+	&__body {}
+
+	&__cards {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 30px;
+
+		@media (max-width:($md1+px)) {
+			gap: 35px;
+			grid-template-columns: 1fr 1fr;
+		}
+
+		@media (max-width:($md2+px)) {
+			gap: 25px;
+		}
+
+		@media (max-width:($md3+px)) {
+			grid-template-columns: 1fr
+		}
+	}
+
+	.blog__card {}
+
+	&__text {}
+
+	&__link-btn {}
+
+	&__botton {}
+
+	&__breadcrumbs {
+		margin: 30px 0px 0 0px;
+	}
+}
+
+.filter-blog {
+	padding: 30px 0 25px 0;
+	overflow: auto;
+
+	&__list {
+		padding: 20px 0px 0px 0px;
+		display: flex;
+		align-items: center;
+		position: relative;
+		display: inline-flex;
+
+		&::before {
+			content: '';
+			width: 100%;
+			position: absolute;
+			height: 1px;
+			background-color: $stroke;
+			left: 0;
+			bottom: 0;
+		}
+	}
+
+	&__item {
+		padding: 0px 0px 15px 0px;
+		position: relative;
+		transition: color 0.3s ease 0s, font-weight 0.3s ease 0s;
+
+
+		&::before {
+			content: '';
+			width: 100%;
+			position: absolute;
+			height: 1px;
+			background-color: $green;
+			left: 0;
+			bottom: 0;
+			transition: transform 0.3s linear 0s;
+			transform: scale(0);
+		}
+
+		&.active {
+			&::before {
+				transform: scale(1);
+			}
+
+			font-weight: 700;
+			color: $green;
+		}
+
+		&:not(:last-child) {
+			margin: 0px 25px 0px 0px;
+		}
+
+		span {
+			font-size: 16px;
+			color: $green-2;
+			cursor: pointer;
+			white-space: nowrap
+		}
+	}
+}

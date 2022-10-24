@@ -1,0 +1,239 @@
+.instruction {
+	padding: 100px 0;
+	background-color: #F6FFFE;
+
+	&__top {
+		margin: 0px 0px 50px 0px;
+		max-width: 1005px;
+
+		@media (max-width:($md2+px)) {
+			margin: 0px 0px 70px 0px;
+		}
+
+		@media (max-width:($md3+px)) {
+			margin: 0px 0px 50px 0px;
+		}
+	}
+
+	&__items {
+		display: -ms-grid;
+		display: grid;
+		-ms-grid-columns: 1fr 1fr 1fr 1fr;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		-ms-grid-rows: 1fr;
+		grid-template-rows: 1fr;
+		-webkit-column-gap: 32px;
+		-moz-column-gap: 32px;
+		column-gap: 32px;
+
+		@media (max-width:($md1+px)) {
+			-ms-grid-columns: 1fr 1fr;
+			grid-template-columns: 1fr 1fr;
+			-ms-grid-rows: 1fr 1fr;
+			grid-template-rows: 1fr 1fr;
+			row-gap: 50px;
+		}
+
+		@media (max-width:($md2+px)) {
+			row-gap: 60px;
+			-ms-grid-columns: 1fr;
+			grid-template-columns: 1fr;
+			-ms-grid-rows: 1fr 1fr 1fr 1fr;
+			grid-template-rows: 1fr 1fr 1fr 1fr;
+		}
+
+		@media (max-width:($md3+px)) {
+			row-gap: 25px;
+		}
+	}
+
+	&__item {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+
+		@media (any-hover:hover) {
+			&:hover {
+				.instruction__link {
+					padding: 0px 0px 0px 25px;
+				}
+
+				.instruction__line {
+					margin: 0px 0px 0px 58px;
+				}
+
+				.instruction__btn {
+					opacity: 1;
+					visibility: visible;
+					margin: 0px 0px 0px 25px;
+				}
+
+				.instruction__number {
+					color: $white;
+
+					&::before,
+					&::after {
+						-webkit-transform: translate(-50%, -50%) scale(1);
+						transform: translate(-50%, -50%) scale(1);
+					}
+				}
+
+
+			}
+		}
+	}
+
+	&__link {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		cursor: pointer;
+		-webkit-box-flex: 1;
+		-ms-flex: 1 1 auto;
+		flex: 1 1 auto;
+		transition: padding 0.3s ease 0s;
+	}
+
+	&__row {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		margin: 0px 0px 55px 0px;
+
+		@media (max-width:($md2+px)) {
+			margin: 0px 0px 20px 0px;
+		}
+
+		@media (max-width:($md3+px)) {
+			margin: 0px 0px 6px 0px;
+		}
+	}
+
+	&__number {
+		font-size: 42px;
+		line-height: 124%;
+		color: $green;
+		position: relative;
+		-webkit-transition: color 0.4s ease 0s;
+		transition: color 0.4s ease 0s;
+
+		span {
+			display: block;
+			position: relative;
+			z-index: 2;
+		}
+
+		&::before,
+		&::after {
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			-webkit-transform: translate(-50%, -50%) scale(0);
+			transform: translate(-50%, -50%) scale(0);
+			border-radius: 50%;
+			-webkit-transition: -webkit-transform 0.3s ease 0s;
+			transition: -webkit-transform 0.3s ease 0s;
+			transition: transform 0.3s ease 0s;
+			transition: transform 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
+		}
+
+		&::before {
+			width: 84px;
+			height: 84px;
+			background-color: $green;
+			z-index: 1;
+		}
+
+		&::after {
+			width: 116px;
+			height: 116px;
+			background-color: $green-hard;
+		}
+	}
+
+	&__line {
+		border-top: 1px dashed #008B77;
+		-webkit-box-flex: 1;
+		-ms-flex: 1 1 auto;
+		flex: 1 1 auto;
+		margin: 0px 0px 0px 27px;
+		transition: margin 0.3s ease 0s;
+
+		@media (max-width:($md2+px)) {
+			display: none;
+		}
+	}
+
+	&__content {
+		max-width: 216px;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+
+		@media (max-width:($md1+px)) {
+			max-width: 368px;
+			display: block;
+		}
+
+		@media (max-width:($md2+px)) {
+			max-width: 100%;
+		}
+	}
+
+	&__sublabel {
+		font-weight: 600;
+		font-size: 27px;
+		line-height: 125%;
+		color: $green;
+		margin: 0px 0px 14px 0px;
+		-webkit-box-flex: 1;
+		-ms-flex: 1 1 auto;
+		flex: 1 1 auto;
+
+		@media (max-width:($md1+px)) {
+			margin: 0px 0px 50px 0px;
+		}
+
+		@media (max-width:($md3+px)) {
+			margin: 0px 0px 28px 0px;
+		}
+	}
+
+	&__text {
+		-webkit-box-flex: 1;
+		-ms-flex: 1 1 auto;
+		flex: 1 1 auto;
+		line-height: 130%;
+		margin: 0px 0px 47px 0px;
+		color: $black;
+
+		@media (max-width:($md1+px)) {
+			margin: 0;
+		}
+	}
+
+	&__btn {
+		opacity: 0;
+		visibility: hidden;
+		-webkit-transition: opacity 0.3s ease 0s;
+		transition: opacity 0.3s ease 0s;
+		transition: all 0.3s ease 0s;
+		width: 100%;
+
+		@media (max-width:($md1+px)) {
+			display: none;
+		}
+	}
+}

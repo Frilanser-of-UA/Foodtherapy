@@ -1,0 +1,90 @@
+.constructor-three {
+	min-height: 730px;
+	background: url('../img/constructor/img-bg.jpg') 0 0/cover no-repeat;
+	padding: 85px 0;
+
+	@media (max-width:($md1+px)) {
+		padding: 160px 0 85px 0px;
+	}
+
+	@media (max-width:($md3+px)) {
+		padding: 50px 0;
+		min-height: auto;
+
+	}
+
+	&__container {}
+
+	&__body {
+		padding: 0 100px;
+
+		@media (max-width:($md1+px)) {
+			padding: 0;
+		}
+	}
+
+	&__title {
+		max-width: 665px;
+		margin: 0px 0px 82px 0px;
+
+		@media (max-width:($md2+px)) {
+			margin: 0px 0px 105px 0px;
+		}
+
+		@media (max-width:($md3+px)) {
+			margin: 0px 0px 70px 0px;
+			font-size: 35px;
+		}
+	}
+
+	&__content {}
+
+	&__subtitle {
+		font-weight: 700;
+		font-size: 27px;
+		line-height: 134%;
+		color: $white;
+		margin: 0px 0px 37px 0px;
+
+		@media (max-width:($md3+px)) {
+			margin: 0px 0px 25px 0px;
+			font-size: 21px;
+		}
+	}
+
+	&__row {
+		display: flex;
+		margin: 0 -20px;
+
+		@media (max-width:($md2+px)) {
+			margin: 0 -15px;
+		}
+
+		@media (max-width:($md3+px)) {
+			display: block;
+		}
+	}
+
+	&__item {
+		padding: 0 20px;
+
+		@media (max-width:($md2+px)) {
+			padding: 0 15px;
+		}
+
+		@media (max-width:($md3+px)) {
+			&:not(:last-child) {
+				margin: 0px 0px 20px 0px;
+			}
+		}
+	}
+
+	&__text {
+		line-height: 130%;
+		color: $white;
+
+		&:not(:last-child) {
+			margin: 0px 0px 20px 0px;
+		}
+	}
+}

@@ -1,0 +1,125 @@
+.quote {
+	padding: 100px 0px;
+	background-color: $white;
+
+	@media (max-width:($md3+px)) {
+		padding: 80px 0px;
+	}
+
+	&__body {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+
+		@media (max-width:($md2+px)) {
+			display: block;
+		}
+	}
+
+	&__left {
+		-webkit-box-flex: 0;
+		-ms-flex: 0 0 50%;
+		flex: 0 0 50%;
+
+		@media (max-width:($md2+px)) {
+			margin: 0px 0px 50px 0px;
+		}
+
+		@media (max-width:($md3+px)) {
+			margin: 0px 0px 40px 0px;
+		}
+	}
+
+	&__img {
+		height: 567px;
+		border-radius: 10px;
+		overflow: hidden;
+
+		@media (max-width:($md3+px)) {
+			height: auto;
+			padding: 0px 0px 77.5% 0px;
+		}
+	}
+
+	&__right {
+		-webkit-box-flex: 0;
+		-ms-flex: 0 1 50%;
+		flex: 0 1 50%;
+		padding: 0px 0px 0px 50px;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+
+		@media (max-width:($md2+px)) {
+			padding: 0;
+		}
+	}
+
+	&__label {
+		margin: 0px 0px 15px 0px;
+		-webkit-box-flex: 1;
+		-ms-flex: 1 1 auto;
+		flex: 1 1 auto;
+
+		@media (max-width:($md2+px)) {
+			margin: 0px 0px 60px 0px;
+		}
+
+		@media (max-width:($md3+px)) {
+			margin: 0px 0px 50px 0px;
+		}
+
+		span {
+			&::before {
+				color: $green;
+
+			}
+
+			display: inline-block;
+			font-size: 65px;
+
+			@media (max-width:($md3+px)) {
+				font-size: 45px;
+			}
+
+			&:last-child {
+				-webkit-transform: scaleX(-1);
+				transform: scaleX(-1);
+				margin: 20px 0px 0px 0px;
+			}
+
+			&:first-child {
+				margin: 0px 0px 20px 0px;
+			}
+		}
+
+		p {
+			font-style: italic;
+			font-weight: 600;
+			font-size: 40px;
+			line-height: 124%;
+			color: $green;
+
+			@media (max-width:($md3+px)) {
+				font-size: 25px;
+			}
+		}
+	}
+
+	&__text {
+		max-width: 240px;
+		line-height: 130%;
+		color: $gray;
+	}
+
+	&__name {
+		font-weight: 700;
+		font-size: 27px;
+		line-height: 134%;
+		margin: 0px 0px 10px 0px;
+	}
+}

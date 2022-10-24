@@ -1,0 +1,78 @@
+.constructor-four {
+	background-color: $white;
+	padding: 150px 0;
+
+	@media (max-width:($md1+px)) {
+		padding: 100px 0;
+	}
+
+	&__container {
+		@media (max-width:($md3+px)) {
+			display: flex;
+			flex-direction: column-reverse;
+		}
+	}
+
+	&__body {
+		display: flex;
+		gap: 70px;
+		margin: 0px 0px 50px 0px;
+		align-items: flex-end;
+
+		@media (max-width:($md2+px)) {
+			display: block;
+			margin: 0px 0px 40px 0px;
+		}
+
+		@media (max-width:($md3+px)) {
+			margin: 0;
+		}
+	}
+
+	&__left {
+		flex: 0 1 763px;
+	}
+
+	&__title {
+		@media (max-width:($md2+px)) {
+			margin: 0px 0px 42px 0px;
+		}
+
+		@media (max-width:($md3+px)) {
+			margin: 0px 0px 25px 0px;
+		}
+	}
+
+	&__right {
+		flex: 0 0 367px;
+
+		@media (max-width:($md2+px)) {
+			max-width: 367px;
+		}
+	}
+
+	&__text {
+		font-size: 20px;
+		line-height: 130%;
+		margin: 0px 0px 33px 0px;
+	}
+
+	&__btn {
+		width: 100%;
+	}
+
+	&__img {
+		padding: 0px 0px 523px 0px;
+		border-radius: 20px;
+		overflow: hidden;
+
+		@media (max-width:($md1+px)) {
+			margin: 0 -35px;
+		}
+
+		@media (max-width:($md3+px)) {
+			margin: 0px 0px 30px 0px;
+			padding: 0px 0px 45.7% 0px;
+		}
+	}
+}

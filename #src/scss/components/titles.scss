@@ -1,0 +1,60 @@
+.titles {
+	padding: 100px 0;
+
+	&__container {}
+
+	&__body {}
+
+	&__row {
+		max-width: 780px;
+	}
+
+	h1 {
+		&.titles__title {
+			color: #000000;
+			margin: 0px 0px 35px 0px;
+			font-weight: 700;
+			font-size: 45px;
+			line-height: 124%;
+		}
+	}
+
+	h2 {
+		&.titles__title {
+			margin: 0px 0px 25px 0px;
+			font-weight: 700;
+			font-size: 27px;
+			line-height: 134%;
+			color: #000000;
+		}
+	}
+
+	h3 {
+		&.titles__title {
+			margin: 0px 0px 15px 0px;
+			font-weight: 700;
+			font-size: 20px;
+			line-height: 174%;
+			color: #000000;
+		}
+	}
+
+	h4 {
+		&.titles__title {
+			margin: 0px 0px 5px 0px;
+			font-weight: 600;
+			font-size: 16px;
+			line-height: 160%;
+			color: #000000;
+		}
+	}
+
+
+
+	&__text {
+		font-size: 18px;
+		line-height: 130%;
+		color: #636363;
+		margin: 0px 0px 25px 0px;
+	}
+}

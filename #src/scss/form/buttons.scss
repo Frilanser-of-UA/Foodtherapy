@@ -1,0 +1,161 @@
+.btn {
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	height: 83px;
+	padding: 10px;
+	font-weight: 700;
+	font-size: 20px;
+	color: $white;
+	border-radius: 20px;
+	background-color: $green;
+	-webkit-transition: background-color 0.3s ease 0s;
+	transition: background-color 0.3s ease 0s;
+	text-align: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	width: 290px;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: reverse;
+	-ms-flex-direction: row-reverse;
+	flex-direction: row-reverse;
+	position: relative;
+
+	@media (any-hover: hover) {
+		&:hover {
+			background-color: #047D6C;
+		}
+	}
+
+	@media (max-width:($md3+px)) {
+		font-size: 17px;
+	}
+
+	&_height {
+		height: 75px;
+	}
+
+	&_color-green-hard {
+		background-color: $green-hard;
+		color: $green;
+
+		@media (any-hover: hover) {
+			&:hover {
+				background-color: #AFCCC8;
+			}
+		}
+	}
+
+	&_white-arrow-height {
+		color: $green;
+		background-color: $white;
+		border: 2px solid $green;
+		height: 75px;
+		padding: 15px;
+		padding-right: 45px;
+		width: 235px;
+
+		@media (any-hover:hover) {
+			&:hover {
+				background-color: $white-soft;
+			}
+		}
+
+		&::before {
+			-webkit-transform: rotate(-90deg);
+			transform: rotate(-90deg);
+			font-size: 25px;
+			position: absolute;
+			right: 15px;
+		}
+	}
+
+	&_hv {
+		@media (any-hover:hover) {
+			&:hover {
+				background-color: $photo-color;
+			}
+		}
+
+	}
+
+	&_white {
+		width: 100%;
+		color: $green;
+		background-color: $white;
+		border: 2px solid $green;
+		height: 75px;
+
+		@media (any-hover:hover) {
+			&:hover {
+				background-color: $white-soft;
+			}
+		}
+	}
+}
+
+.button-up {
+	display: none;
+
+	@media (max-width:($md2+px)) {
+		position: fixed;
+		bottom: 25px;
+		right: 25px;
+		font-size: 77px;
+		background-color: #6AB2A8;
+		border-radius: 20px;
+		padding: 24px;
+		color: white;
+		-webkit-transform: rotate(-90deg);
+		transform: rotate(-90deg);
+		z-index: 5;
+		-webkit-transition: -webkit-transform 0.3s linear 0s;
+		transition: -webkit-transform 0.3s linear 0s;
+		transition: transform 0.3s linear 0s;
+		transition: transform 0.3s linear 0s, -webkit-transform 0.3s linear 0s;
+
+		&._fixed {
+			-webkit-transform: rotate(-90deg) translateX(-170px);
+			transform: rotate(-90deg) translateX(-170px);
+		}
+
+		&._hidden {
+			display: block;
+		}
+	}
+
+	@media (max-width:($md3+px)) {
+		font-size: 50px;
+		padding: 10px;
+		bottom: 10px;
+		right: 10px;
+
+		&._fixed {
+			-webkit-transform: rotate(-90deg) translateX(-100px);
+			transform: rotate(-90deg) translateX(-100px);
+		}
+	}
+}
+
+.btn-shop {
+	display: inline-flex;
+	border-radius: 0px 0px 8px 0px;
+	color: $white;
+	background-color: $green;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 114%;
+	height: 55px;
+	width: 165px;
+	align-items: center;
+	justify-content: center;
+
+	span {
+		font-size: 26px;
+		margin: 0px 0px 0px 5px;
+	}
+}

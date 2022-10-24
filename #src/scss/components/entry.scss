@@ -1,0 +1,109 @@
+.entry {
+	background-color: $white;
+	padding: 100px 0;
+
+	@media (max-width:($md3+px)) {
+		padding: 80px 0;
+	}
+
+	&__body {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+
+		@media (max-width:($md3+px)) {
+			display: block;
+		}
+	}
+
+	&__left {
+		-webkit-box-flex: 0;
+		-ms-flex: 0 1 555px;
+		flex: 0 1 555px;
+
+		@media (max-width:($md2+px)) {
+			margin: 0px 0px 0px -35px;
+		}
+
+		@media (max-width:($md3+px)) {
+			margin: 0px 0px 50px 0px;
+		}
+	}
+
+	&__img {
+		border-radius: 50px;
+		overflow: hidden;
+		height: 680px;
+
+		@media (max-width:($md1+px)) {
+			height: 800px;
+		}
+
+		@media (max-width:($md2+px)) {
+			height: 695px;
+		}
+
+		@media (max-width:($md3+px)) {
+			height: 350px;
+		}
+
+		img {
+			width: 100%;
+		}
+	}
+
+	&__right {
+		-webkit-box-flex: 0;
+		-ms-flex: 0 1 600px;
+		flex: 0 1 600px;
+		padding: 80px 0px 0px 0px;
+		margin: 0px 0px 0px 45px;
+
+		@media (max-width:($md2+px)) {
+			padding: 40px 0px 0px 0px;
+			margin: 0px 0px 0px 35px;
+		}
+
+		@media (max-width:($md3+px)) {
+			padding: 0;
+			margin: 0;
+		}
+	}
+
+	&__title {
+		font-size: 60px;
+		line-height: 114%;
+		margin: 0px 0px 70px 0px;
+
+		@media (max-width:($md2+px)) {
+			font-size: 50px;
+		}
+
+		@media (max-width:($md3+px)) {
+			font-size: 40px;
+			margin: 0px 0px 40px 0px;
+		}
+	}
+
+	&__text {
+		font-weight: 600;
+		font-size: 29px;
+		line-height: 134%;
+		margin: 0px 0px 50px 0px;
+
+		@media (max-width:($md2+px)) {
+			margin: 0px 0px 70px 0px;
+		}
+
+		@media (max-width:($md3+px)) {
+			font-size: 22px;
+			margin: 0px 0px 40px 0px;
+		}
+	}
+
+	&__line {
+		@media (max-width:($md3+px)) {
+			text-align: center;
+		}
+	}
+}

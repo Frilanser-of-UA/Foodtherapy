@@ -1,0 +1,145 @@
+.questions {
+	background: #F6FFFE;
+	padding: 150px 0;
+
+	&_bg {
+		background: $white;
+	}
+
+	@media (max-width:($md2+px)) {
+		padding: 100px 0;
+	}
+
+	@media (max-width:($md2+px)) {
+		padding: 80px 0;
+	}
+
+	&__body {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+
+		@media (max-width:($md2+px)) {
+			display: block;
+		}
+	}
+
+	&__left {
+		-webkit-box-flex: 0;
+		-ms-flex: 0 1 550px;
+		flex: 0 1 550px;
+		border-radius: 20px;
+		overflow: hidden;
+		padding: 0px 0px 1175px 0px;
+		margin: 0px 50px 0px 0px;
+
+		@media (max-width:($md2+px)) {
+			display: none;
+		}
+	}
+
+	&__right {
+		-webkit-box-flex: 0;
+		-ms-flex: 0 1 600px;
+		flex: 0 1 600px;
+	}
+
+	&__title {
+		margin: 0px 0px 70px 0px;
+
+		@media (max-width:($md2+px)) {
+			margin: 0px 0px 80px 0px;
+		}
+
+		@media (max-width:($md3+px)) {
+			margin: 0px 0px 70px 0px;
+		}
+	}
+}
+
+.spollers-question {
+
+	&__item {
+		border-bottom: 1px solid $gray-non;
+
+		&:first-child {
+			border-top: 1px solid $gray-non;
+		}
+	}
+
+	&__title {
+		font-weight: 600;
+		font-size: 27px;
+		line-height: 125%;
+		color: $gray;
+		padding: 25px 78px 25px 0;
+		cursor: pointer;
+		position: relative;
+		-webkit-transition: color 0.3s ease 0s;
+		transition: color 0.3s ease 0s;
+
+		@media (max-width:($md3+px)) {
+			font-size: 21px;
+		}
+
+		@media (any-hover:hover) {
+			&:hover {
+				color: $black;
+
+				&::before,
+				&::after {
+					color: #047D6C;
+				}
+			}
+		}
+
+		&.active {
+			color: $black;
+
+			&::after {
+				-webkit-transform: translateY(-50%) rotate(180deg);
+				transform: translateY(-50%) rotate(180deg);
+			}
+
+			&::before,
+			&::after {
+				color: #047D6C;
+			}
+		}
+
+		&::before,
+		&::after {
+			content: '';
+			width: 28px;
+			height: 3px;
+			position: absolute;
+			background-color: $green;
+			right: 5px;
+			top: 50%;
+			-webkit-transform: translateY(-50%);
+			transform: translateY(-50%);
+			-webkit-transition: color 0.3s ease 0s;
+			transition: color 0.3s ease 0s;
+		}
+
+		&::after {
+			-webkit-transform: translateY(-50%) rotate(90deg);
+			transform: translateY(-50%) rotate(90deg);
+			-webkit-transition: -webkit-transform 0.3s ease 0s;
+			transition: -webkit-transform 0.3s ease 0s;
+			transition: transform 0.3s ease 0s;
+			transition: transform 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
+		}
+
+		&::before {}
+	}
+
+	&__body {
+		padding: 5px 0 25px 0;
+	}
+
+	&__text {
+		font-size: 20px;
+		line-height: 130%;
+	}
+}

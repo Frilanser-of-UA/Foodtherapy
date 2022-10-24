@@ -1,0 +1,33 @@
+.title {
+	font-weight: 700;
+	font-size: 45px;
+	line-height: 124%;
+
+	@media (max-width:($md2+px)) {
+		font-size: 35px;
+	}
+
+	@media (max-width:($md3+px)) {
+		font-size: 30px;
+	}
+
+	&_white {
+		color: $white;
+	}
+}
+
+.label {
+	font-weight: 500;
+	font-size: 25px;
+	line-height: 114%;
+	color: $green;
+
+	&_white {
+		color: $white;
+		font-size: 16px;
+	}
+
+	@media (max-width:($md3+px)) {
+		font-size: 15px;
+	}
+}

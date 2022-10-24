@@ -1,0 +1,137 @@
+.choice {
+	background-color: $white;
+	margin: 100px 0px;
+
+	@media (max-width:($md3+px)) {
+		margin: 80px 0px;
+	}
+
+	&__top {
+		margin: 0px 0px 60px 0px;
+
+		@media (max-width:($md2+px)) {
+			margin: 0px 0px 50px 0px;
+		}
+
+		@media (max-width:($md3+px)) {
+			margin: 0px 0px 58px 0px;
+		}
+	}
+
+	&__title {
+		margin: 0px 0px 50px 0px;
+
+		@media (max-width:($md2+px)) {
+			margin: 0px 0px 70px 0px;
+		}
+
+		@media (max-width:($md3+px)) {
+			margin: 0px 0px 50px 0px;
+		}
+	}
+
+	&__text {
+		max-width: 600px;
+		line-height: 130%;
+	}
+
+	&__links {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		margin: 0px 0px 50px 0px;
+	}
+
+	&__link {
+		height: 269px;
+		-webkit-box-flex: 0;
+		-ms-flex: 0 0 269px;
+		flex: 0 0 269px;
+		border-radius: 50%;
+		font-weight: 700;
+		font-size: 20px;
+		color: $white;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		padding: 0px 30px 0px 45px;
+		position: relative;
+
+		&:not(:last-child) {
+			margin: 0px 31px 0px 0px;
+
+			@media (max-width:($md2+px)) {
+				margin: 0px 20px 0px 0px;
+			}
+		}
+
+		@media (max-width:($md2+px)) {
+			height: 187px;
+			-webkit-box-flex: 0;
+			-ms-flex: 0 0 187px;
+			flex: 0 0 187px;
+		}
+
+		@media (any-hover:hover) {
+			&:hover {
+				span {
+					&::before {
+						-webkit-transform: translate(-20px);
+						-ms-transform: translate(-20px);
+						transform: translate(-20px);
+					}
+				}
+			}
+		}
+
+		span {
+			&:first-child {
+				-webkit-box-flex: 1;
+				-ms-flex: 1 1 auto;
+				flex: 1 1 auto;
+				text-align: center;
+			}
+
+			&::before {
+				font-size: 49px;
+				-webkit-transition: -webkit-transform 0.3s ease 0s;
+				transition: -webkit-transform 0.3s ease 0s;
+				-o-transition: transform 0.3s ease 0s;
+				transition: transform 0.3s ease 0s;
+				transition: transform 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
+			}
+
+		}
+
+		&_blue {
+			background-color: #4BB1E9;
+		}
+
+		&_green {
+			background-color: #22C5AD;
+		}
+
+		&_dark-blue {
+			background-color: #062355;
+		}
+
+		&_biege {
+			background-color: #E3D1CB;
+		}
+
+		&_purple {
+			background-color: #736ADF;
+		}
+	}
+
+	&__line {
+		text-align: right;
+
+		@media (max-width:($md3+px)) {
+			text-align: center;
+		}
+	}
+}

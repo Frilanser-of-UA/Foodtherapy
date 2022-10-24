@@ -1,0 +1,32 @@
+.first-blog {
+	padding: 152px 0px 0px 0px;
+
+	@media (max-width:($md3+px)) {
+		padding: 120px 0px 0px 0px;
+	}
+
+	&__container {}
+
+	&__body {}
+
+	&__title {
+		font-weight: 700;
+		font-size: 60px;
+		line-height: 114%;
+		max-width: 600px;
+
+		@media (max-width:($md1+px)) {
+			font-size: 50px;
+		}
+
+		@media (max-width:($md3+px)) {
+			font-size: 40px;
+		}
+	}
+
+	&__text {
+		line-height: 130%;
+		margin: 32px 0px 0px 0px;
+		max-width: 600px;
+	}
+}

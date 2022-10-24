@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+	<title>Стаття</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/vendors.min.css">
+	<link rel="stylesheet" href="css/style.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+	<div class="header__container container">
+		<div class="header__body">
+			<a href="#" class="header__logo">
+				<div class="header__img header__img_visible">
+					<img src="img/header/logo-drop-down-darck.svg" alt="логотип">
+				</div>
+				<div class="header__img header__img_not-visible">
+					<img src="img/header/logo.svg" alt="логотип">
+				</div>
+			</a>
+			<div class="header__menu menu">
+				<div class="menu__body">
+					<ul class="menu__list menu__list_black">
+						<li class="menu__item">
+							<span class="menu__link _icon-arrow-down">Послуги</span>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__link">Меданалізи</a>
+						</li>
+						<li class="menu__item">
+							<span class="menu__link _icon-arrow-down">Діагностика</span>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__link">Магазин</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__link">Про компанію</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__link">Блог</a>
+						</li>
+					</ul>
+				</div>
+				<!-- nav active Откроет выпадающее меню-->
+				<nav class="menu__drop-down drop-down ">
+					<div class="drop-down__container container">
+						<div class="drop-down__header">
+							<a href="#" class="drop-down__logo">
+								<picture>
+									<source srcset="img/header/logo-drop-down.svg" type="image/svg+xml" media="(min-width:1024px)">
+									<source srcset="img/header/logo-drop-down-darck.svg" type="image/svg+xml" media="(max-width:1024px)">
+									<img src="img/header/logo-drop-down.svg" alt="Логотип">
+								</picture>
+							</a>
+							<div class="drop-down__menu">
+								<ul class="drop-down__list">
+									<!-- drop-down__item active виделит активный пункт меню + переворот галочки-->
+									<li class="drop-down__item active">
+										<span class="drop-down__link _icon-arrow-down">Послуги</span>
+										<!-- drop-down__submenu active Откроет 2 уровень випадающего меню-->
+										<div class="drop-down__submenu active">
+											<ul class="drop-down__sublist">
+												<!-- drop-down__subitem active виделит активный пункт меню + переворот галочки-->
+												<li class="drop-down__subitem active">
+													<span class="drop-down__sublink _icon-arrow-down">Foodtherapy Сheck-up</span>
+													<!-- drop-down__subsublist active виделит активный пункт меню + переворот галочки-->
+													<ul class="drop-down__subsublist active">
+														<li class="drop-down__subsubitem"><a href="#" class="drop-down__subsublink">Мужской</a></li>
+														<li class="drop-down__subsubitem"><a href="#" class="drop-down__subsublink">Женский</a></li>
+														<li class="drop-down__subsubitem"><a href="#" class="drop-down__subsublink">Детский</a></li>
+														<li class="drop-down__subsubitem"><a href="#" class="drop-down__subsublink">Возраст+</a></li>
+													</ul>
+												</li>
+												<!--  -->
+												<li class="drop-down__subitem">
+													<span class="drop-down__sublink _icon-arrow-down">Меданализы</span>
+													<ul class="drop-down__subsublist">
+														<li class="drop-down__subsubitem"><a href="#" class="drop-down__subsublink">Медицинские анализы общие</a></li>
+														<li class="drop-down__subsubitem"><a href="#" class="drop-down__subsublink">Эксклюзивные анализы Foodtherapy США</a></li>
+														<li class="drop-down__subsubitem"><a href="#" class="drop-down__subsublink">Эксклюзивные анализы Foodtherapy Германия</a></li>
+														<li class="drop-down__subsubitem"><a href="#" class="drop-down__subsublink">Foodtherapy Сheck-up</a></li>
+														<li class="drop-down__subsubitem"><a href="#" class="drop-down__subsublink">Еще...</a></li>
+													</ul>
+												</li>
+												<li class="drop-down__subitem">
+													<span class="drop-down__sublink _icon-arrow-down">Терапия</span>
+													<ul class="drop-down__subsublist">
+														<li class="drop-down__subsubitem"><a href="#" class="drop-down__subsublink">Висцер. массаж</a></li>
+														<li class="drop-down__subsubitem"><a href="#" class="drop-down__subsublink">Массаж лица</a></li>
+														<li class="drop-down__subsubitem"><a href="#" class="drop-down__subsublink">Общий массаж</a></li>
+														<li class="drop-down__subsubitem"><a href="#" class="drop-down__subsublink">Гирудотерапия</a></li>
+													</ul>
+												</li>
+												<li class="drop-down__subitem">
+													<span class="drop-down__sublink _icon-arrow-down">Диетология</span>
+													<ul class="drop-down__subsublist">
+														<li class="drop-down__subsubitem"><a href="#" class="drop-down__subsublink">Общая консульт</a></li>
+														<li class="drop-down__subsubitem"><a href="#" class="drop-down__subsublink">Онлайн консульт</a></li>
+													</ul>
+												</li>
+												<li class="drop-down__subitem">
+													<span class="drop-down__sublink _icon-arrow-down">Диагностика</span>
+													<ul class="drop-down__subsublist">
+														<li class="drop-down__subsubitem"><a href="#" class="drop-down__subsublink">Биомпедансометрия</a></li>
+													</ul>
+												</li>
+												<li class="drop-down__subitem">
+													<span class="drop-down__sublink _icon-arrow-down">Пакетные обследования</span>
+													<ul class="drop-down__subsublist">
+														<li class="drop-down__subsubitem"><a href="#" class="drop-down__subsublink">Спорт</a></li>
+														<li class="drop-down__subsubitem"><a href="#" class="drop-down__subsublink">Бьюти кожа</a></li>
+														<li class="drop-down__subsubitem"><a href="#" class="drop-down__subsublink">Бьюти вес</a></li>
+														<li class="drop-down__subsubitem"><a href="#" class="drop-down__subsublink">Смарт мозг + энергия</a></li>
+														<li class="drop-down__subsubitem"><a href="#" class="drop-down__subsublink">Еще...</a></li>
+													</ul>
+												</li>
+												<li class="drop-down__subitem">
+													<span class="drop-down__sublink _icon-arrow-down">Детский раздел</span>
+													<ul class="drop-down__subsublist">
+														<li class="drop-down__subsubitem"><a href="#" class="drop-down__subsublink">Общая консульт</a></li>
+														<li class="drop-down__subsubitem"><a href="#" class="drop-down__subsublink">Онлайн консульт</a></li>
+													</ul>
+												</li>
+											</ul>
+											<a href="#" class="drop-down__link-label">Всі доступні послуги від FoodTherapy</a>
+										</div>
+									</li>
+									<li class="drop-down__item">
+										<a href="#" class="drop-down__link ">Меданалізи</a>
+									</li>
+									<li class="drop-down__item">
+										<a href="#" class="drop-down__link _icon-arrow-down">Діагностика</a>
+										<div class="drop-down__submenu">
+											<ul class="drop-down__sublist ">
+												<li class="drop-down__subitem"><a href="#" class="drop-down__sublink">Магазин (2 рівень)</a></li>
+												<li class="drop-down__subitem"><a href="#" class="drop-down__sublink">Магазин (2 рівень)</a></li>
+												<li class="drop-down__subitem"><a href="#" class="drop-down__sublink">Магазин (2 рівень)</a></li>
+												<li class="drop-down__subitem"><a href="#" class="drop-down__sublink">Магазин (2 рівень)</a></li>
+												<li class="drop-down__subitem"><a href="#" class="drop-down__sublink">Діагностика (2 рівень)</a>
+													<ul class="drop-down__sublist">
+														<li class="drop-down__subsubitem"><a href="#" class="drop-down__subsublink">Магазин (3 рівень)</a></li>
+														<li class="drop-down__subsubitem"><a href="#" class="drop-down__subsublink">Магазин (3 рівень)</a></li>
+														<li class="drop-down__subsubitem"><a href="#" class="drop-down__subsublink">Магазин (3 рівень)</a></li>
+														<li class="drop-down__subsubitem"><a href="#" class="drop-down__subsublink">Магазин (3 рівень)</a></li>
+													</ul>
+												</li>
+												<li class="drop-down__subitem"><a href="#" class="drop-down__sublink">Магазин (2 рівень)</a></li>
+												<li class="drop-down__subitem"><a href="#" class="drop-down__sublink">Діагностика (2 рівень)</a>
+													<ul class="drop-down__sublist">
+														<li class="drop-down__subsubitem"><a href="#" class="drop-down__subsublink">Магазин (3 рівень)</a></li>
+														<li class="drop-down__subsubitem"><a href="#" class="drop-down__subsublink">Магазин (3 рівень)</a></li>
+														<li class="drop-down__subsubitem"><a href="#" class="drop-down__subsublink">Магазин (3 рівень)</a></li>
+														<li class="drop-down__subsubitem"><a href="#" class="drop-down__subsublink">Магазин (3 рівень)</a></li>
+													</ul>
+												</li>
+											</ul>
+											<a href="#" class="drop-down__link-label">Всі доступні послуги від FoodTherapy</a>
+										</div>
+									</li>
+									<li class="drop-down__item">
+										<a href="#" class="drop-down__link">Магазин</a>
+									</li>
+									<li class="drop-down__item">
+										<a href="#" class="drop-down__link">Про компанію</a>
+									</li>
+									<li class="drop-down__item">
+										<a href="#" class="drop-down__link">Блог</a>
+									</li>
+								</ul>
+							</div>
+							<button class="drop-down__close"></button>
+						</div>
+					</div>
+				</nav>
+			</div>
+			<div class="header__items header__items_black" data-da=".drop-down__header,1023,2">
+				<!-- lang active раскривает язики-->
+				<div class="header__lang lang">
+					<div class="lang__header">
+						<button type="button" class="lang__button _icon-arrow-down">Укр</button>
+					</div>
+					<div class="lang__body">
+						<span class="lang__item not-visible">Укр</span>
+						<span class="lang__item">Рус</span>
+						<span class="lang__item">Eng</span>
+					</div>
+				</div>
+				<div class="header__search-form search-form">
+					<button type="submit" class="search-form__icon _icon-search"></button>
+					<form class="search-form__item" action="#">
+						<input class="search-form__input search-form__input_color" placeholder="Введіть ваш запит">
+						<button type="submit" class="search-form__button search-form__button_color _icon-search"></button>
+						<span type="submit" class="search-form__close search-form__close_color"></span>
+					</form>
+				</div>
+				<div class="header__phone phone">
+					<button type="submit" class="phone__button _icon-phone"></button>
+					<div class="phone__body">
+						<div class="phone__triangle">
+							<img src="img/header/triangle.svg" alt="">
+						</div>
+						<div class="phone__content">
+							<a href="tel:380685900941" class="phone__link">+380 68 590 0941</a>
+							<a href="tel:380685900941" class="phone__link">+380 68 590 0941</a>
+						</div>
+					</div>
+				</div>
+				<a href="#" class="header__user _icon-user"></a>
+				<a href="#" class="header__cart _icon-cart"></a>
+			</div>
+			<button class="menu__icon icon-menu">
+				<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<g clip-path="url(#clip0_656_5707)">
+						<path d="M10.6667 16H53.3334" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+						<path d="M10.6667 32H53.3334" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+						<path d="M10.6667 48H53.3334" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+					</g>
+					<defs>
+						<clipPath id="clip0_656_5707">
+							<rect width="64" height="64" fill="white" />
+						</clipPath>
+					</defs>
+				</svg>
+			</button>
+		</div>
+	</div>
+</header>
+		<main class="page">
+			<!-- ================================= -->
+			<section class="articles">
+				<div class="articles__container container">
+					<div class="articles__top">
+						<div class="articles__row">
+							<div class="articles__links">
+								<a href="#" target="_blank" class="articles__link-btn-text _icon-arrow">Назад</a>
+								<a href="#" target="_blank" class="articles__link-btn _icon-facebook"></a>
+								<a href="#" target="_blank" class="articles__link-btn _icon-twitter"></a>
+								<a href="#" target="_blank" class="articles__link-btn _icon-link"></a>
+							</div>
+							<div class="articles__data">14.03.2021</div>
+						</div>
+						<div class="articles__line">
+							<div class="articles__items">
+								<div class="articles__label">Категорія:</div>
+								<div class="articles__tags">
+									<a href="#" target="_blank" class="articles__link">Біоактивні добавки до їжі</a>
+								</div>
+							</div>
+							<div class="articles__items">
+								<div class="articles__label">Теги:</div>
+								<div class="articles__tags">
+									<a href="#" target="_blank" class="articles__link">#назван тегу<span>,</span></a>
+									<a href="#" target="_blank" class="articles__link">#назван тегу<span>,</span></a>
+									<a href="#" target="_blank" class="articles__link">#назван тегу(ховер)<span>,</span></a>
+									<a href="#" target="_blank" class="articles__link">#назван тегу<span>,</span></a>
+									<a href="#" target="_blank" class="articles__link">#назван тегу</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="articles__body">
+						<article class="articles__item">
+							<div class="articles__banner">
+								<div class="articles__img _ibg">
+									<img src="img/articles/article-banner.jpg" alt="Фон заголовку">
+								</div>
+								<div class="articles__title">
+									<h1>Або заголовок 1 рівня</h1>
+								</div>
+							</div>
+							<div class="articles__text">
+								<p>Цільова аудиторія — малі та середні сільгоспвиробники, агрохолдинги, компанії, які надають послуги агровиробникам, тергромади, студенти, політики, представники влади, громадських асоціацій.</p>
+								<p>Наші цінності: якість, комунікація, сталий розвиток.</p>
+								<p>Цільова аудиторія — малі та середні сільгоспвиробники, агрохолдинги, компанії, які надають послуги агровиробникам, тергромади, студенти, політики, представники влади, громадських асоціацій.</p>
+							</div>
+						</article>
+						<article class="articles__item">
+							<div class="articles__title">
+								<h2>Заголовок 2</h2>
+							</div>
+							<div class="articles__text">
+								<p>Цільова аудиторія — малі та середні сільгоспвиробники, агрохолдинги, компанії, які надають послуги агровиробникам, тергромади, студенти, політики, представники влади, громадських асоціацій.</p>
+								<p>Наші цінності: якість, комунікація, сталий розвиток.</p>
+								<p>Цільова аудиторія — малі та середні сільгоспвиробники, агрохолдинги, компанії, які надають послуги агровиробникам, тергромади, студенти, політики, представники влади, громадських асоціацій.</p>
+							</div>
+						</article>
+						<article class="articles__item">
+							<div class="articles__title">
+								<h3>Заголовок 3</h3>
+							</div>
+							<div class="articles__text">
+								<p>Цільова аудиторія — малі та середні сільгоспвиробники, агрохолдинги, компанії, які надають послуги агровиробникам, тергромади, студенти, політики, представники влади, громадських асоціацій.</p>
+								<p>Наші цінності: якість, комунікація, сталий розвиток.</p>
+								<p>Цільова аудиторія — малі та середні сільгоспвиробники, агрохолдинги, компанії, які надають послуги агровиробникам, тергромади, студенти, політики, представники влади, громадських асоціацій.</p>
+							</div>
+							<div class="articles__player player-art">
+								<video poster="img/articles/article-banner.jpg">
+									<source src="" type="video/mp4">
+								</video>
+								<div class="player-art__controls">
+									<button class="player-art__play-button">
+										<img src="img/articles/movie-line.svg" alt="Кнопка play">
+									</button>
+								</div>
+							</div>
+						</article>
+						<article class="articles__item">
+							<div class="articles__title">
+								<h4>Заголовок 4</h4>
+							</div>
+							<div class="articles__text">
+								<p>Цільова аудиторія — малі та середні сільгоспвиробники, <span>агрохолдинги, компанії,</span> які надають послуги агровиробникам, <a href="#" target="_blank">посилання в тексті,</a> політики, представники влади, громадських асоціацій.</p>
+								<p>Наші цінності: якість, комунікація, сталий розвиток.</p>
+								<p>Цільова аудиторія — малі та середні сільгоспвиробники, агрохолдинги, компанії, які надають послуги агровиробникам, тергромади, студенти, політики, представники влади, громадських асоціацій.</p>
+							</div>
+							<ul class="articles__list">
+								<li>
+									<p>Цільова аудиторія — малі та середні сільгоспвиробники, агрохолдинги, компанії, які надають послуги агровиробникам, тергромади, студенти, політики, представн</p>
+								</li>
+								<li>
+									<p>Цільова аудиторія — малі та середні сільгоспвиробники, агрохолдинги, компанії, які надають послуги агровиробникам, тергромади, студенти, політики, представн</p>
+								</li>
+								<li>
+									<p>Цільова аудиторія — малі та середні сільгоспвиробники, агрохолдинги, компанії, які надають послуги агровиробникам, тергромади, студенти, політики, представн</p>
+								</li>
+							</ul>
+							<div class="articles__banner articles__banner_margin">
+								<div class="articles__img articles__img_height _ibg">
+									<img src="img/articles/article-banner.jpg" alt="Фон">
+								</div>
+							</div>
+						</article>
+						<article class="articles__item">
+							<div class="articles__title">
+								<h5>Заголовк 5</h5>
+							</div>
+							<div class="articles__text">
+								<p>Цільова аудиторія — малі та середні сільгоспвиробники, агрохолдинги, компанії, які надають послуги агровиробникам, тергромади, студенти, політики, представники влади, громадських асоціацій.</p>
+								<p>Наші цінності: якість, комунікація, сталий розвиток.</p>
+								<p>Цільова аудиторія — малі та середні сільгоспвиробники, агрохолдинги, компанії, які надають послуги агровиробникам, тергромади, студенти, політики, представники влади, громадських асоціацій.</p>
+							</div>
+							<ol class="articles__list-num">
+								<li>
+									<p>Цільова аудиторія — малі та середні сільгоспвиробники, агрохолдинги, компанії, які надають послуги агровиробникам, тергромади, студенти, політики, представн</p>
+								</li>
+								<li>
+									<p>Цільова аудиторія — малі та середні сільгоспвиробники, агрохолдинги, компанії, які надають послуги агровиробникам, тергромади, студенти, політики, представн</p>
+								</li>
+								<li>
+									<p>Цільова аудиторія — малі та середні сільгоспвиробники, агрохолдинги, компанії, які надають послуги агровиробникам, тергромади, студенти, політики, представн</p>
+								</li>
+							</ol>
+						</article>
+						<article class="articles__item">
+							<div class="articles__title">
+								<h6>Заголовок 6</h6>
+							</div>
+							<div class="articles__text">
+								<p>Цільова аудиторія — малі та середні сільгоспвиробники, агрохолдинги, компанії, які надають послуги агровиробникам, тергромади, студенти, політики, представники влади, громадських асоціацій.</p>
+								<p>Наші цінності: якість, комунікація, сталий розвиток.</p>
+								<p>Цільова аудиторія — малі та середні сільгоспвиробники, агрохолдинги, компанії, які надають послуги агровиробникам, тергромади, студенти, політики, представники влади, громадських асоціацій.</p>
+							</div>
+							<div class="articles__quotes quotes">
+								<div class="quotes__quote"><span></span><span></span></div>
+								<div class="quotes__label">
+									<p>”Цільова аудиторія — малі та середні сільгоспвиробники, агрохолдинги, компанії, які надають послуги агровиробникам, тергромади, студенти, політики, представники влади, громадських асоціацій.”</p>
+									<div class="quotes__autor">Приписка автора</div>
+								</div>
+								<div class="quotes__quote"><span></span><span></span></div>
+							</div>
+						</article>
+						<article class="articles__item">
+							<div class="articles__title">
+								<h5>Заголовк 5</h5>
+							</div>
+							<div class="articles__text">
+								<p>Цільова аудиторія — малі та середні сільгоспвиробники, агрохолдинги, компанії, які надають послуги агровиробникам, тергромади, студенти, політики, представники влади, громадських асоціацій.</p>
+								<p>Наші цінності: якість, комунікація, сталий розвиток.</p>
+								<p>Цільова аудиторія — малі та середні сільгоспвиробники, агрохолдинги, компанії, які надають послуги агровиробникам, тергромади, студенти, політики, представники влади, громадських асоціацій.</p>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+			<!-- ================================= -->
+			<section class="also">
+				<div class="also__container container">
+					<div class="also__body">
+						<h2 class="also__title title">Смотрите также</h2>
+						<div class="also__cards">
+							<div class="blog__card card-blog">
+								<a href="#" target="_blank" class="card-blog__body">
+									<div class="card-blog__img _ibg">
+										<img src="img/blog/blog-img.jpg" alt="Зображення блог">
+									</div>
+									<h4 class="card-blog__title">Заголовок звичайний</h4>
+									<p class="card-blog__text">Цільова аудиторія — малі та середні сільгоспвиробники, агрохолдинги, компанії, які надають по</p>
+									<div class="card-blog__items">
+										<span href="#" class="card-blog__item">#Tag name</span>
+										<span href="#" class="card-blog__item">#Tag name</span>
+										<span href="#" class="card-blog__item">+3 tags</span>
+									</div>
+									<span class="card-blog__data">13.03.2021</span>
+								</a>
+							</div>
+							<div class="blog__card card-blog">
+								<a href="#" target="_blank" class="card-blog__body">
+									<div class="card-blog__img _ibg">
+										<img src="img/blog/blog-img.jpg" alt="Зображення блог">
+									</div>
+									<h4 class="card-blog__title">Заголовок звичайний</h4>
+									<p class="card-blog__text">Цільова аудиторія — малі та середні сільгоспвиробники, агрохолдинги, компанії, які надають послуги агровиробникамнги, конги тергромЦільова аудиторія — малі та середні сільгоспвиробники, агрохолдинги, компанії, які надають послуги агровиробникам, тергром</p>
+									<div class="card-blog__items">
+										<span href="#" class="card-blog__item">#Tag name</span>
+										<span href="#" class="card-blog__item">#Tag name</span>
+										<span href="#" class="card-blog__item">+3 tags</span>
+									</div>
+									<span class="card-blog__data">13.03.2021</span>
+								</a>
+							</div>
+							<div class="blog__card card-blog">
+								<a href="#" target="_blank" class="card-blog__body">
+									<div class="card-blog__img _ibg">
+										<img src="img/blog/blog-img.jpg" alt="Зображення блог">
+									</div>
+									<h4 class="card-blog__title">Заголовок звичайний</h4>
+									<p class="card-blog__text">Цільова аудиторія — малі та середні сільгоспвиробники, агрохол</p>
+									<div class="card-blog__items">
+										<span href="#" class="card-blog__item">#Tag name</span>
+										<span href="#" class="card-blog__item">#Tag name</span>
+										<span href="#" class="card-blog__item">+3 tags</span>
+									</div>
+									<span class="card-blog__data">13.03.2021</span>
+								</a>
+							</div>
+						</div>
+						<div class="also__line">
+							<a href="#" class="also__link-btn btn btn_height">Перейти до блогу</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- ================================= -->
+			<section class="subscribe">
+				<div class="subscribe__container container">
+					<div class="subscribe__body">
+						<h2 class="subscribe__label label label_white">Підписка на розсилку новин</h2>
+						<div class="subscribe__title title title_white">Підписуйся та будь в курсі всіх новин та подій зі світу здорового образу життя</div>
+						<form action="#" id="form-subscribe" class="subscribe__form form-subscribe" method="get" enctype="multipart/form-data" novalidate="novalidate">
+							<div class="form-subscribe__line">
+								<input id="email" class="form-subscribe__input input-4" type="email" name="email" placeholder="Ваш email">
+								<button type="submit" form="form-subscribe" class="form-subscribe__button">Підписатися</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+			<!-- ================================ -->
+			<section class="callback callback_cat">
+				<div class="callback__container container">
+					<div class="callback__body">
+						<div class="callback__left">
+							<div class="callback__label label">Приписка</div>
+							<h2 class="callback__title title">Виникли запитання?</h2>
+							<p class="callback__text">Замовте безкоштовну онлайн консультацію і ми підскажемо що потрібно саме для вас і саме в вашому випадку</p>
+							<form action="#" id="form-question" class="callback__form form" method="get" enctype="multipart/form-data" novalidate="novalidate">
+								<div class="form__line">
+									<input id="text" class="form__input input" type="text" name="Ім’я" placeholder="Ім’я">
+									<label class="form__label" for="text">Це поле обов’язкове до заповнення</label>
+								</div>
+								<div class="form__line">
+									<input id="tel" class="form__input input" type="tel" name="Номер телефону" placeholder="Номер телефону">
+									<label for="tel" class="form__label" for="text">Це поле обов’язкове до заповнення</label>
+								</div>
+								<div class="form__line">
+									<input id="email" class="form__input input" type="email" name="Електронна пошта" placeholder="Електронна пошта">
+									<label for="email" class="form__label" for="text">Це поле обов’язкове до заповнення</label>
+								</div>
+								<div class="form__line">
+									<input id="text-2" class="form__input input" type="text" name="Питання" placeholder="Ваше питання*">
+									<label for="text-2" class="form__label" for="text">Це поле обов’язкове до заповнення</label>
+								</div>
+								<div class="form__row">
+									<button type="submit" form="form-question" class="form__button btn">Замовити консультацію</span></button>
+								</div>
+							</form>
+							<div class="callback__successfull successfull">
+								<div class="successfull__img">
+									<img src="img/categori/succesfull.svg" alt="Забраження успішного відправлення">
+								</div>
+								<div class="successfull__text">Ви успішно заповнили форму! Ми зв’яжемося з вами найближчим часом</div>
+							</div>
+						</div>
+						<div class="callback__right">
+							<div class="callback__img callback__img_cat _ibg">
+								<img src="img/constructor/img-2.jpg" alt="Зображення лікаря">
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</section>
+			<!-- ================================= -->
+			<button class="button-up _icon-arrow"></button>
+		</main>
+		<footer class="footer">
+	<div class="footer__container container">
+		<div class="footer__body">
+			<div class="footer__left">
+				<ul class="footer__list">
+					<li class="footer__item"><span>Контакти</span>
+						<ul class="footer__sublist">
+							<li class="footer__subitem"><a href="#" class="footer__sublink">Контакти</a></li>
+							<li class="footer__subitem"><a href="#" class="footer__sublink">Послуги</a></li>
+							<li class="footer__subitem"><a href="#" class="footer__sublink">Аналізи</a></li>
+							<li class="footer__subitem"><a href="#" class="footer__sublink">Конфіденційність</a></li>
+						</ul>
+					</li>
+					<li class="footer__item"><span>Контакти</span>
+						<ul class="footer__sublist">
+							<li class="footer__subitem"><a href="#" class="footer__sublink">Контакти</a></li>
+							<li class="footer__subitem"><a href="#" class="footer__sublink">Послуги</a></li>
+							<li class="footer__subitem"><a href="#" class="footer__sublink">Аналізи</a></li>
+							<li class="footer__subitem"><a href="#" class="footer__sublink">Конфіденційність</a></li>
+						</ul>
+					</li>
+					<li class="footer__item"><span>Контакти</span>
+						<ul class="footer__sublist">
+							<li class="footer__subitem"><a href="#" class="footer__sublink">Контакти</a></li>
+							<li class="footer__subitem"><a href="#" class="footer__sublink">Послуги</a></li>
+							<li class="footer__subitem"><a href="#" class="footer__sublink">Аналізи</a></li>
+							<li class="footer__subitem"><a href="#" class="footer__sublink">Конфіденційність</a></li>
+						</ul>
+					</li>
+					<li class="footer__item"><span>Контакти</span>
+						<ul class="footer__sublist">
+							<li class="footer__subitem"><a href="#" class="footer__sublink">Контакти</a></li>
+							<li class="footer__subitem"><a href="#" class="footer__sublink">Послуги</a></li>
+							<li class="footer__subitem"><a href="#" class="footer__sublink">Аналізи</a></li>
+							<li class="footer__subitem"><a href="#" class="footer__sublink">Конфіденційність</a></li>
+						</ul>
+					</li>
+				</ul>
+				<div class="footer__bottom">
+					<a href="#" class="footer__link-copiring">Copyright 2022</a>
+					<a href="#" class="footer__link-copiring">Created by <span class="_icon-owl"></span></a>
+				</div>
+			</div>
+			<div class="footer__right">
+				<a href="#" class="footer__logo"><img src="img/footer/logo-footer.svg" alt="Логотип"></a>
+				<div class="footer__social social">
+					<a href="#" class="social__link _icon-facebook"></a>
+					<a href="#" class="social__link _icon-youtube"></a>
+					<a href="#" class="social__link _icon-telegram"></a>
+					<a href="#" class="social__link _icon-instagram"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+	</div>
+	<!-- Swiper -->
+<!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+<script src="js/vendors.min.js"></script>
+<script src="js/app.min.js"></script>
+</body>
+
+</html>
