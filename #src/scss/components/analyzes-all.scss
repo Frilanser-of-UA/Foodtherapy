@@ -426,20 +426,12 @@
 		font-size: 20px;
 		line-height: 130%;
 
-		@media (max-width:($md3+px)) {
-			font-size: 15px;
-		}
-
 		&_old {
 			font-weight: 400;
 			font-size: 15px;
 			line-height: 130%;
 			color: $gray;
 			text-decoration-line: line-through;
-
-			@media (max-width:($md3+px)) {
-				font-size: 13px;
-			}
 		}
 
 		&_new {
